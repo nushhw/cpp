@@ -1,89 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Jack's C++ Playground</title>
+  <meta charset="UTF-8">
+  <title>Colorful C++ Code Box</title>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
   <style>
     body {
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      background: #1a1a2e;
       color: white;
       font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: 20px;
+      padding: 30px;
+      text-align: center;
     }
 
     h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #ff512f, #dd2476);
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
       -webkit-background-clip: text;
       color: transparent;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
     }
 
-    textarea {
-      width: 90%;
-      max-width: 1000px;
-      height: 300px;
-      font-size: 1rem;
-      padding: 10px;
+    pre {
+      max-width: 90%;
+      margin: 0 auto;
+      text-align: left;
+      background: #2d2d2d;
+      padding: 20px;
       border-radius: 10px;
-      border: none;
-      outline: none;
-      background-color: #2e2a4f;
-      color: #ffffff;
-      resize: vertical;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    }
-
-    button {
-      margin-top: 15px;
-      padding: 12px 24px;
-      font-size: 1.2rem;
-      background: #ff416c;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #ff4b2b;
-    }
-
-    #output {
-      width: 90%;
-      max-width: 1000px;
-      margin-top: 20px;
-      background-color: #1b1b2f;
-      border-radius: 10px;
-      padding: 15px;
-      min-height: 150px;
-      white-space: pre-wrap;
-      font-family: monospace;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Cpp!</h1>
+  <h1>CODING</h1>
 
-  <textarea id="codeBox">// Start typing your C++ code here!
+  <pre><code class="language-cpp">// Example C++ Code
 #include &lt;iostream&gt;
 using namespace std;
 
 int main() {
-    cout &lt;&lt; "Hello World!" &lt;&lt; endl;
+    cout &lt;&lt; "Hello, colorful world!" &lt;&lt; endl;
     return 0;
-}
-  </textarea>
+}</code></pre>
 
-
-  <div id="output">// Output will appear here...</div>
-
-  
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
 </body>
 </html>
